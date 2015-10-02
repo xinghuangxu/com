@@ -1,1 +1,78 @@
-Hello, This is Xinghuang Xu!
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>N.H.</title>
+        <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta name="robots" content="all" />
+        <meta name="MSSmartTagsPreventParsing" content="true" />
+        <meta http-equiv="imagetoolbar" content="false" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->	
+        <style>
+            * { padding: 0; margin: 0; }
+            body { background-color: #333; }
+            p {     color: #fff;
+                    font-family: "freight-micro-pro", Helvetica;
+                    font-size: 22px;
+                    line-height: 32px;
+                    margin-bottom: 22px;
+                    -webkit-font-smoothing: antialiased; }
+            h2{    color: black;
+                   font-family: "freight-micro-pro", Helvetica;
+                   font-size: 34px;}
+            a:hover { color: #990000; border-bottom: 1px solid rgba(255,255,255,1); }
+            #about { width: 360px; padding: 0 0 0 150px; margin: 35px 50px !important; }
+            @media (max-width: 767px) {
+                #monogram { position: relative; width: auto; padding: 20px; margin: 0; }
+                #about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
+                background-image { opacity: 0.2; }
+            }
+            ul#connect {
+                white-space: nowrap;
+                width: 400px;
+            }
+            #connect li {
+                display: inline;
+                list-style-type: none;
+            }
+
+            #connect a:hover{text-decoration: none;opacity:0.4;border-style: none;}
+        </style>
+    </head>	
+
+    <body>
+
+
+        <!-- swap out for information about yourself -->
+        <div id="about">
+            <h2>Xinghuang Xu,</h2>
+            <p>a software engineer from Guangzhou, China. </p>
+            <ul id="connect">
+                <li><a href="/blog"  target="_blank"><img src="img/wordpress.png"></a></li>
+                <li><a href="https://www.linkedin.com/pub/xinghuang-leon-xu/65/420/24a"  target="_blank"><img src="img/linkedin.png"></a></li>
+                <li><a href="mailto:xinghuangxu@gmail.com"  target="_blank"><img src="img/email.png"></a></li>
+            </ul>
+
+        </div>
+
+
+        <!--include jquery & backstretch-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.backstretch.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $(window).resize(function () {
+                    if ($(this).width() >= 767) {
+                        $.backstretch(["me.JPG", "seattle.JPG", "seattle2.JPG"], {duration: 3000, fade: 750});
+                    }
+                })
+                        .resize();//trigger resize on page load
+            });
+        </script>
+
+    </body>	
+</html>
